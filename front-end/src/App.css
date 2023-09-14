@@ -1,0 +1,255 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  padding: 1rem;   
+  border: 1px solid lightgray;
+  margin: 1%;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .cards_item {
+    width: 18%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width:1299px) {
+  .cards_item {
+    width: 25%;
+  }
+}
+
+.card_image img {
+  height: 300px;
+  max-width: 100%;
+  vertical-align: middle;
+  width: 300px;
+  object-fit: cover;
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background:  #EF8D9C;
+  text-align: center;
+}
+
+.card_title {
+  color: black;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: black;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0px;
+  font-weight: 400;
+  text-align: center;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+.search-bar input {
+  width: 40%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 3px solid lightsteelblue;
+}
+
+.App-link {
+  color: #61dafb;
+}
+p.page-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+p.createCrib {
+  font-size: 25px;
+  font-weight: 600;
+  vertical-align: middle;
+  background: dimgrey;
+  color: white;
+  padding: 13px;
+  cursor: pointer;
+}
+.search-bar {
+  text-align: center;
+  padding: 10px;
+}
+
+header.header {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  background: lightsteelblue;
+  font-weight: bold;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+}
+
+.form-error {
+  color: red;
+}
+
+.form-control input {
+  width: 396px;
+  height: 37px;
+  border: 1px solid;
+  padding: 10px;
+}
+button.update-btn {
+  padding: 7px;
+  font-size: 16px;
+  background: lightsteelblue;
+  font-weight: bold;
+  border: none;
+}
+section.title-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
