@@ -1,4 +1,4 @@
-# cribsHound
+# Cribs Hound
 
 How to Setup the Code
 
